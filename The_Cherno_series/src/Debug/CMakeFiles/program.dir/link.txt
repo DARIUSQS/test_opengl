@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/program.dir/IndexBuffer.cpp.o CMakeFiles/program.dir/Renderer.cpp.o CMakeFiles/program.dir/VertexArray.cpp.o CMakeFiles/program.dir/VertexBuffer.cpp.o CMakeFiles/program.dir/main.cpp.o -o program  -lglfw 
