@@ -1,3 +1,0 @@
-/home/darius/Dev/C++/Opengl/The_Cherno_series/src/Debug/CMakeFiles/program.dir
-/home/darius/Dev/C++/Opengl/The_Cherno_series/src/Debug/CMakeFiles/edit_cache.dir
-/home/darius/Dev/C++/Opengl/The_Cherno_series/src/Debug/CMakeFiles/rebuild_cache.dir
