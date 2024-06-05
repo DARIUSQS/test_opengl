@@ -153,6 +153,54 @@ IndexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/IndexBuffer.cpp.s
 .PHONY : IndexBuffer.cpp.s
 
+Texture.o: Texture.cpp.o
+.PHONY : Texture.o
+
+# target to build an object file
+Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.o
+.PHONY : Texture.cpp.o
+
+Texture.i: Texture.cpp.i
+.PHONY : Texture.i
+
+# target to preprocess a source file
+Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.i
+.PHONY : Texture.cpp.i
+
+Texture.s: Texture.cpp.s
+.PHONY : Texture.s
+
+# target to generate assembly for a file
+Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.s
+.PHONY : Texture.cpp.s
+
+VertexArray.o: VertexArray.cpp.o
+.PHONY : VertexArray.o
+
+# target to build an object file
+VertexArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.o
+.PHONY : VertexArray.cpp.o
+
+VertexArray.i: VertexArray.cpp.i
+.PHONY : VertexArray.i
+
+# target to preprocess a source file
+VertexArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.i
+.PHONY : VertexArray.cpp.i
+
+VertexArray.s: VertexArray.cpp.s
+.PHONY : VertexArray.s
+
+# target to generate assembly for a file
+VertexArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.s
+.PHONY : VertexArray.cpp.s
+
 VertexBuffer.o: VertexBuffer.cpp.o
 .PHONY : VertexBuffer.o
 
@@ -176,6 +224,30 @@ VertexBuffer.s: VertexBuffer.cpp.s
 VertexBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBuffer.cpp.s
 .PHONY : VertexBuffer.cpp.s
+
+VertexBufferLayout.o: VertexBufferLayout.cpp.o
+.PHONY : VertexBufferLayout.o
+
+# target to build an object file
+VertexBufferLayout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.o
+.PHONY : VertexBufferLayout.cpp.o
+
+VertexBufferLayout.i: VertexBufferLayout.cpp.i
+.PHONY : VertexBufferLayout.i
+
+# target to preprocess a source file
+VertexBufferLayout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.i
+.PHONY : VertexBufferLayout.cpp.i
+
+VertexBufferLayout.s: VertexBufferLayout.cpp.s
+.PHONY : VertexBufferLayout.s
+
+# target to generate assembly for a file
+VertexBufferLayout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.s
+.PHONY : VertexBufferLayout.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -237,9 +309,18 @@ help:
 	@echo "... IndexBuffer.o"
 	@echo "... IndexBuffer.i"
 	@echo "... IndexBuffer.s"
+	@echo "... Texture.o"
+	@echo "... Texture.i"
+	@echo "... Texture.s"
+	@echo "... VertexArray.o"
+	@echo "... VertexArray.i"
+	@echo "... VertexArray.s"
 	@echo "... VertexBuffer.o"
 	@echo "... VertexBuffer.i"
 	@echo "... VertexBuffer.s"
+	@echo "... VertexBufferLayout.o"
+	@echo "... VertexBufferLayout.i"
+	@echo "... VertexBufferLayout.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

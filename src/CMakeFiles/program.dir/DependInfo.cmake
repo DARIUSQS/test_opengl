@@ -9,7 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/darius/Dev/cpp/opengl/test_opengl/src/IndexBuffer.cpp" "CMakeFiles/program.dir/IndexBuffer.cpp.o" "gcc" "CMakeFiles/program.dir/IndexBuffer.cpp.o.d"
+  "/home/darius/Dev/cpp/opengl/test_opengl/src/Texture.cpp" "CMakeFiles/program.dir/Texture.cpp.o" "gcc" "CMakeFiles/program.dir/Texture.cpp.o.d"
+  "/home/darius/Dev/cpp/opengl/test_opengl/src/VertexArray.cpp" "CMakeFiles/program.dir/VertexArray.cpp.o" "gcc" "CMakeFiles/program.dir/VertexArray.cpp.o.d"
   "/home/darius/Dev/cpp/opengl/test_opengl/src/VertexBuffer.cpp" "CMakeFiles/program.dir/VertexBuffer.cpp.o" "gcc" "CMakeFiles/program.dir/VertexBuffer.cpp.o.d"
+  "/home/darius/Dev/cpp/opengl/test_opengl/src/VertexBufferLayout.cpp" "CMakeFiles/program.dir/VertexBufferLayout.cpp.o" "gcc" "CMakeFiles/program.dir/VertexBufferLayout.cpp.o.d"
   "/home/darius/Dev/cpp/opengl/test_opengl/src/main.cpp" "CMakeFiles/program.dir/main.cpp.o" "gcc" "CMakeFiles/program.dir/main.cpp.o.d"
   "/home/darius/Dev/cpp/opengl/test_opengl/src/shader.cpp" "CMakeFiles/program.dir/shader.cpp.o" "gcc" "CMakeFiles/program.dir/shader.cpp.o.d"
   )

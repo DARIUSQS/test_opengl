@@ -72,6 +72,12 @@ Shader::Shader(const std::string& path)
     CompileProgram();
 }
 
+
+void Shader::SetInt(const std::string& str, int val)
+{
+    glUniform1i(glGetUniformLocation(ProgramID, str.c_str()), val);
+}
+
 void Shader::Bind()
 {
     glUseProgram(ProgramID);

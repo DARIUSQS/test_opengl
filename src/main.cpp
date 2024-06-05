@@ -4,9 +4,12 @@
 
 #include <iostream>
 
+#include "VertexBufferLayout.h"
 #include "shader.h"
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
+#include "VertexArray.h"
+#include "Texture.h"
 
 int main(void)
 {
@@ -34,13 +37,15 @@ int main(void)
         std::cout << "Failed to initialize OpenGL context" << std::endl;
         return -1;
     }
-   
+
     float indices[] = 
     {
-        -0.5f, -0.5f,
-        -0.5f, 0.5f,
-        0.5f, 0.5f,
-        0.5f, -0.5f
+
+        //positions     //colors            //TexCoords
+        -0.5f, -0.5f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,
+        -0.5f, 0.5f,    0.0f, 1.0f, 0.0f,   0.0f, 1.0f,
+        0.5f, 0.5f,     1.0f, 0.0f, 0.0f,   1.0f, 1.0f,
+        0.5f, -0.5f,    0.5f, 0.5f, 0.5f,   1.0f, 0.0f
     };
     
     unsigned int order[] = 
@@ -49,21 +54,32 @@ int main(void)
         0, 2, 3
     };
 
-    unsigned int vao;
-    glGenVertexArrays(1, &vao);
-    glBindVertexArray(vao);
+    VertexArray vao;
+    vao.Bind();
     
     VertexBuffer vb(indices, sizeof(indices), GL_STATIC_DRAW);
     vb.Bind();
- 
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), 0);
+    
+    VertexBufferLayout layout;
+    layout.Push<float>(2);
+    layout.Push<float>(3);
+    layout.Push<float>(2);
+    vao.AddBuffer(vb, layout);
 
     IndexBuffer ib(order, 6, GL_STATIC_DRAW);
     ib.Bind();
 
     Shader sh("basic.shader");
     sh.Bind();
+
+    Texture texture1, texture2;
+    texture1.GenerateTexture("Textures/wood.jpg", GL_TEXTURE_2D);
+    texture2.GenerateTexture("Textures/smile.jpg", GL_TEXTURE_2D);
+
+    texture2.Bind(GL_TEXTURE_2D, GL_TEXTURE0);
+    texture1.Bind(GL_TEXTURE_2D, GL_TEXTURE1);
+    sh.SetInt("Texture1", 0);
+    sh.SetInt("Texture2", 1);
 
     while (!glfwWindowShouldClose(window))
     {

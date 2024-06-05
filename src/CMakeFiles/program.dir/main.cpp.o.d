@@ -138,6 +138,15 @@ CMakeFiles/program.dir/main.cpp.o: \
  /usr/include/c++/14.1.1/bits/basic_ios.tcc \
  /usr/include/c++/14.1.1/bits/ostream.tcc /usr/include/c++/14.1.1/istream \
  /usr/include/c++/14.1.1/bits/istream.tcc \
+ /home/darius/Dev/cpp/opengl/test_opengl/src/VertexBufferLayout.h \
+ /home/darius/Dev/cpp/opengl/test_opengl/src/../include/glad.h \
+ /usr/include/c++/14.1.1/vector \
+ /usr/include/c++/14.1.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.1.1/bits/stl_vector.h \
+ /usr/include/c++/14.1.1/bits/stl_bvector.h \
+ /usr/include/c++/14.1.1/bits/vector.tcc \
  /home/darius/Dev/cpp/opengl/test_opengl/src/shader.h \
  /home/darius/Dev/cpp/opengl/test_opengl/src/VertexBuffer.h \
- /home/darius/Dev/cpp/opengl/test_opengl/src/IndexBuffer.h
+ /home/darius/Dev/cpp/opengl/test_opengl/src/IndexBuffer.h \
+ /home/darius/Dev/cpp/opengl/test_opengl/src/VertexArray.h \
+ /home/darius/Dev/cpp/opengl/test_opengl/src/Texture.h
