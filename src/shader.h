@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "../include/glm/glm.hpp"
 
 class Shader
 {
@@ -12,6 +13,7 @@ class Shader
         std::string VertexShader, FragmentShader;
         Shader(const std::string& path);
         void SetInt(const std::string& str, int val);
+        void SetMat4(const std::string& str, unsigned int number, unsigned int transpose, float* data);
         void Bind();
         void unBind();
 };

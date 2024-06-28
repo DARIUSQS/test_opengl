@@ -1,7 +1,7 @@
 CMakeFiles/program.dir/Texture.cpp.o: \
- /home/darius/Dev/cpp/opengl/test_opengl/src/Texture.cpp \
+ /home/darius/Dev/cpp/test_opengl/src/Texture.cpp \
  /usr/include/stdc-predef.h \
- /home/darius/Dev/cpp/opengl/test_opengl/src/Texture.h \
+ /home/darius/Dev/cpp/test_opengl/src/Texture.h \
  /usr/include/c++/14.1.1/string \
  /usr/include/c++/14.1.1/bits/requires_hosted.h \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -97,12 +97,12 @@ CMakeFiles/program.dir/Texture.cpp.o: \
  /usr/include/c++/14.1.1/bits/functional_hash.h \
  /usr/include/c++/14.1.1/bits/hash_bytes.h \
  /usr/include/c++/14.1.1/bits/basic_string.tcc \
- /home/darius/Dev/cpp/opengl/test_opengl/src/../include/glad.h \
- /home/darius/Dev/cpp/opengl/test_opengl/src/../include/khrplatform.h \
+ /home/darius/Dev/cpp/test_opengl/src/../include/glad.h \
+ /home/darius/Dev/cpp/test_opengl/src/../include/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/darius/Dev/cpp/opengl/test_opengl/src/../include/stb_image.h \
+ /home/darius/Dev/cpp/test_opengl/src/../include/stb_image.h \
  /usr/include/c++/14.1.1/stdlib.h /usr/include/string.h \
  /usr/include/strings.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/limits.h \
