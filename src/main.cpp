@@ -2,6 +2,7 @@
 #include <GLFW/glfw3.h>
 #include <GL/gl.h>
 
+#include <cmath>
 #include <iostream>
 
 /* #include "../include/glm/glm.hpp" */
@@ -23,9 +24,65 @@ static void PrintMat(glm::mat4 trans)
     std::cout << trans[0].w << ' ' << trans[1].w << ' ' << trans[2].w <<' ' <<trans[3].w << '\n';
 }
 
-static void PrintVec(glm::vec4 vec)
+static void PrintVec(glm::vec3 vec)
 {
-    std::cout << vec.x << ' ' << vec.y << ' ' << vec.z << ' ' << vec.w << '\n';
+    std::cout << vec.x << ' ' << vec.y << ' ' << vec.z << '\n';
+}
+
+static glm::vec3 CameraPos(0.0f, 0.0f, 3.0f);
+static glm::vec3 CameraFront(0.0f, 0.0f, -1.0f);
+static glm::vec3 CameraUp(0.0f, 1.0f, 0.0f);
+
+double lastx = 480, lasty = 270;
+double pitch = 0.0f, yaw = -90.0f;
+
+double lastFrameTime = 0, deltaTime = 0;
+
+static void checkForInput(GLFWwindow *window)
+{
+    const float CameraSpeed = 2 * deltaTime;
+    if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    {
+        CameraPos += CameraSpeed * CameraFront;
+    }
+    if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    {
+        CameraPos -= CameraSpeed * CameraFront;
+    }
+    if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    {
+        CameraPos += glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
+    }
+    if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    {
+        CameraPos -= glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
+    }
+}
+
+static void cursor_position_callback(GLFWwindow *window, double xpos, double ypos)
+{
+    double xoffset = xpos - lastx;
+    double yoffset = ypos - lasty;
+
+    lastx = xpos;
+    lasty = ypos;
+
+    float sensitivity = 0.06f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    pitch -= yoffset;
+    yaw += xoffset;
+    
+    if(pitch > 89.0f) pitch = 89.0f;
+    if(pitch < -89.0f) pitch = -89.0f;
+
+    glm::vec3 angleVec;
+    angleVec.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    angleVec.y = sin(glm::radians(pitch));
+    angleVec.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+
+    CameraFront = glm::normalize(angleVec);
 }
 
 int main(void)
@@ -39,7 +96,10 @@ int main(void)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(960, 540, "Hello World", NULL, NULL);
+
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetCursorPosCallback(window, cursor_position_callback);
     if (!window)
     {
         glfwTerminate();
@@ -59,27 +119,42 @@ int main(void)
 
     float indices[] = 
     {
-        //positions    //TexCoords
-         /*1 1 */ -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 
-         /*2 2 center */ -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-         /*3 2 down right*/ -0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 
-         /*4 2 up left*/ -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-         /*5 3 right up*/ 0.5f, -0.5f, -0.5f, 1.0f, 1.0f,
-         /*6 3 right down*/ 0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
-         /*7 4 right down*/ 0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-         /*8 4 center*/ 0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-         /*9 5 left up*/ -0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
-         /*10 5 center*/ -0.5f, 0.5f, 0.5f, 0.0f, 0.0f,
-         /*11 6 right down*/ 0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-         /*12 6 right up*/ 0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-         /*13 6 left up*/ 0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
-         /*14 7 right up*/ 0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-         /*15 8 left up*/ -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 
-         /*16 8 right up*/ -0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        /* -0.5f, -0.5f,  0.0f, 0.0f, */
-        /* -0.5f, 0.5f,   0.0f, 1.0f, */
-        /* 0.5f, 0.5f,    1.0f, 1.0f, */
-        /* 0.5f, -0.5f,   1.0f, 0.0f */
+        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 1.0f, 1.0f,
+        -0.5f, 0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f, -1.0f, 0.0f, 0.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f,
+        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, 0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, 0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f, 0.0f, -1.0f, 0.0f, 0.0f, 1.0f,
+        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f,
+        0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
+        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f
     };
     
     unsigned int order[] = 
@@ -106,45 +181,48 @@ int main(void)
     
     VertexBufferLayout layout;
     layout.Push<float>(3);
+    layout.Push<float>(3);
     layout.Push<float>(2);
     vao.AddBuffer(vb, layout);
-
-    IndexBuffer ib(order, 36, GL_STATIC_DRAW);
-    ib.Bind();
 
     Shader sh("basic.shader");
     sh.Bind();
 
-    Texture texture1, texture2;
-    texture1.GenerateTexture("Textures/wood.jpg", GL_TEXTURE_2D);
-    texture2.GenerateTexture("Textures/smile.jpg", GL_TEXTURE_2D);
+    /* Texture texture1, texture2; */
+    /* texture1.GenerateTexture("Textures/wood.jpg", GL_TEXTURE_2D); */
+    /* texture2.GenerateTexture("Textures/smile.jpg", GL_TEXTURE_2D); */
 
-    texture2.Bind(GL_TEXTURE_2D, GL_TEXTURE0);
-    texture1.Bind(GL_TEXTURE_2D, GL_TEXTURE1);
-    sh.SetInt("Texture1", 0);
-    sh.SetInt("Texture2", 1);
-
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-
-    glm::mat4 projection;
-    projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+    /* texture2.Bind(GL_TEXTURE_2D, GL_TEXTURE0); */
+    /* texture1.Bind(GL_TEXTURE_2D, GL_TEXTURE1); */
+    /* sh.SetInt("Texture1", 0); */
+    /* sh.SetInt("Texture2", 1); */
     
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        checkForInput(window);
 
-        model = glm::rotate(model, glm::radians(.1f), glm::vec3(1.0f, 0.0f, 0.0f));
-        model = glm::rotate(model, glm::radians(.1f), glm::vec3(0.0f, 1.0f, 0.0f));
-        model = glm::rotate(model, glm::radians(.1f), glm::vec3(0.0f, 0.0f, 1.0f));
+        deltaTime = glfwGetTime() - lastFrameTime;
+        lastFrameTime = glfwGetTime();
+
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 view = glm::mat4(1.0f);
+        view = glm::translate(view, -CameraPos);
+        view = glm::lookAt(CameraPos, CameraPos + CameraFront, CameraUp);
+        glm::mat4 projection;
+        projection = glm::perspective(glm::radians(45.0f), 960.0f / 540.0f, 0.1f, 100.0f);
+
         sh.SetMat4("model", 1, GL_FALSE, glm::value_ptr(model));
         sh.SetMat4("view", 1, GL_FALSE, glm::value_ptr(view));
         sh.SetMat4("projection", 1, GL_FALSE, glm::value_ptr(projection));
 
-        glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+        sh.SetVec3("CameraPos", CameraPos.x, CameraPos.y, CameraPos.z);       
+        sh.SetVec3("objColor", 0.4f, 0.6f, 0.1f);       
+        sh.SetVec3("lightColor", 1.0f, 1.0f, 1.0f);       
+        sh.SetVec3("lightPos", 2.5f, 1.2f, 0.0f);       
+
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -73,7 +73,7 @@ Shader::Shader(const std::string& path)
 }
 
 
-void Shader::SetInt(const std::string& str, int val)
+void Shader::SetInt(const std::string& str,int val)
 {
     glUniform1i(glGetUniformLocation(ProgramID, str.c_str()), val);
 }
@@ -81,6 +81,11 @@ void Shader::SetInt(const std::string& str, int val)
 void Shader::SetMat4(const std::string& str, unsigned int number, unsigned int transpose, float* data)
 {
     glUniformMatrix4fv(glGetUniformLocation(ProgramID, str.c_str()), number, transpose, data);
+}
+
+void Shader::SetVec3(const std::string& str, float v1, float v2, float v3)
+{
+    glUniform3f(glGetUniformLocation(ProgramID, str.c_str()), v1, v2, v3);
 }
 
 void Shader::Bind()
