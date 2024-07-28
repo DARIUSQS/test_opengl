@@ -14,7 +14,7 @@ project(opengl)
 add_subdirectory(vendor/glad)
 add_subdirectory(vendor/stb_image)
 add_subdirectory(vendor/glm)
-add_subdirectory(vendor/imgui)
+add_subdirectory(vendor/imguiInclude)
 
 add_executable(opengl main.cpp)
 
