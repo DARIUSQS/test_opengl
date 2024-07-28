@@ -10,7 +10,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.0/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "CMakeLists.txt"
+  "vendor/glad/CMakeLists.txt"
+  "vendor/glm/CMakeLists.txt"
+  "vendor/imgui/CMakeLists.txt"
+  "vendor/stb_image/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
@@ -39,6 +45,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake"
   "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake"
   "/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake"
+  "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -122,9 +129,16 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.30.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendor/glad/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendor/stb_image/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendor/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "vendor/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/program.dir/DependInfo.cmake"
+  "CMakeFiles/opengl.dir/DependInfo.cmake"
+  "vendor/glad/CMakeFiles/glad.dir/DependInfo.cmake"
+  "vendor/stb_image/CMakeFiles/stb_image.dir/DependInfo.cmake"
+  "vendor/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   )

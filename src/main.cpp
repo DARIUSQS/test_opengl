@@ -1,13 +1,9 @@
-#include "../include/glad.c"
+#include <glad.h>
 #include <GLFW/glfw3.h>
 #include <GL/gl.h>
-
 #include <cmath>
 #include <iostream>
-
-/* #include "../include/glm/glm.hpp" */
-/* #include "../include/glm/gtc/matrix_transform.hpp" */
-#include "../include/glm/gtc/type_ptr.hpp"
+#include <glm/gtc/type_ptr.hpp>
 
 #include "VertexBufferLayout.h"
 #include "shader.h"
@@ -15,6 +11,10 @@
 #include "IndexBuffer.h"
 #include "VertexArray.h"
 #include "Texture.h"
+
+#include <imgui/imgui.h>
+#include <imgui/backends/imgui_impl_glfw.h>
+#include <imgui/backends/imgui_impl_opengl3.h>
 
 static void PrintMat(glm::mat4 trans)
 {
@@ -33,27 +33,37 @@ static glm::vec3 CameraPos(0.0f, 0.0f, 3.0f);
 static glm::vec3 CameraFront(0.0f, 0.0f, -1.0f);
 static glm::vec3 CameraUp(0.0f, 1.0f, 0.0f);
 
+bool cursor_disabled = 1;
+
 double lastx = 480, lasty = 270;
 double pitch = 0.0f, yaw = -90.0f;
 
 double lastFrameTime = 0, deltaTime = 0;
 
-static void checkForInput(GLFWwindow *window)
+static void checkForInput(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
     const float CameraSpeed = 2 * deltaTime;
-    if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    
+    if(key == GLFW_KEY_P && action == GLFW_PRESS)
+    {
+        if(cursor_disabled) glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+        else glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+        std::cout << "muie steaua\n";
+        cursor_disabled =! cursor_disabled;
+    }
+    if(key == GLFW_KEY_W && action == GLFW_PRESS)
     {
         CameraPos += CameraSpeed * CameraFront;
     }
-    if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    if(key == GLFW_KEY_S && action == GLFW_PRESS)
     {
         CameraPos -= CameraSpeed * CameraFront;
     }
-    if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    if(key == GLFW_KEY_D && action == GLFW_PRESS)
     {
         CameraPos += glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
     }
-    if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    if(key == GLFW_KEY_A && action == GLFW_PRESS)
     {
         CameraPos -= glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
     }
@@ -71,8 +81,11 @@ static void cursor_position_callback(GLFWwindow *window, double xpos, double ypo
     xoffset *= sensitivity;
     yoffset *= sensitivity;
 
-    pitch -= yoffset;
-    yaw += xoffset;
+    if(cursor_disabled)
+    {
+        pitch -= yoffset;
+        yaw += xoffset;
+    }
     
     if(pitch > 89.0f) pitch = 89.0f;
     if(pitch < -89.0f) pitch = -89.0f;
@@ -96,10 +109,11 @@ int main(void)
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    window = glfwCreateWindow(960, 540, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(1280, 720, "Hello World", NULL, NULL);
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glfwSetCursorPosCallback(window, cursor_position_callback);
+    glfwSetKeyCallback(window, checkForInput);
     if (!window)
     {
         glfwTerminate();
@@ -185,7 +199,7 @@ int main(void)
     layout.Push<float>(2);
     vao.AddBuffer(vb, layout);
 
-    Shader sh("basic.shader");
+    Shader sh("resources/shaders/basic.shader");
     sh.Bind();
 
     /* Texture texture1, texture2; */
@@ -197,11 +211,26 @@ int main(void)
     /* sh.SetInt("Texture1", 0); */
     /* sh.SetInt("Texture2", 1); */
     
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io;
+    ImGui::StyleColorsDark();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 100");
+
+    bool show_demo_window = false;
+    bool show_another_window = false;
+    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        checkForInput(window);
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        if(show_demo_window) ImGui::ShowDemoWindow(&show_demo_window);
 
         deltaTime = glfwGetTime() - lastFrameTime;
         lastFrameTime = glfwGetTime();
@@ -224,9 +253,51 @@ int main(void)
 
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
+        {
+            static float f = 0.0f;
+            static int counter = 0;
+
+            ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
+
+            ImGui::Text("This is some useful text.");               // Display some text (you can use a format strings too)
+            ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
+            ImGui::Checkbox("Another Window", &show_another_window);
+
+            ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float using a slider from 0.0f to 1.0f
+            ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
+
+            if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
+                counter++;
+            ImGui::SameLine();
+            ImGui::Text("counter = %d", counter);
+
+            ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+            ImGui::End();
+        }
+
+        if (show_another_window)
+        {
+            ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
+            ImGui::Text("Hello from another window!");
+            if (ImGui::Button("Close Me"))
+                show_another_window = false;
+            ImGui::End();
+        }
+
+        ImGui::Render();
+        int display_w, display_h;
+        glfwGetFramebufferSize(window, &display_w, &display_h);
+        glViewport(0, 0, display_w, display_h);
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);
+
         glfwPollEvents();
     }
+
+
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 
     glfwTerminate();
     return 0;

@@ -113,172 +113,260 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/darius/Dev/cpp/test_opengl/src/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named program
+# Target rules for targets named opengl
 
 # Build rule for target.
-program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program
-.PHONY : program
+opengl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opengl
+.PHONY : opengl
 
 # fast build rule for target.
-program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-.PHONY : program/fast
+opengl/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/build
+.PHONY : opengl/fast
 
-IndexBuffer.o: IndexBuffer.cpp.o
-.PHONY : IndexBuffer.o
+#=============================================================================
+# Target rules for targets named glad
 
-# target to build an object file
-IndexBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/IndexBuffer.cpp.o
-.PHONY : IndexBuffer.cpp.o
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
 
-IndexBuffer.i: IndexBuffer.cpp.i
-.PHONY : IndexBuffer.i
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
-# target to preprocess a source file
-IndexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/IndexBuffer.cpp.i
-.PHONY : IndexBuffer.cpp.i
+#=============================================================================
+# Target rules for targets named stb_image
 
-IndexBuffer.s: IndexBuffer.cpp.s
-.PHONY : IndexBuffer.s
+# Build rule for target.
+stb_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
+.PHONY : stb_image
 
-# target to generate assembly for a file
-IndexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/IndexBuffer.cpp.s
-.PHONY : IndexBuffer.cpp.s
+# fast build rule for target.
+stb_image/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/stb_image/CMakeFiles/stb_image.dir/build.make vendor/stb_image/CMakeFiles/stb_image.dir/build
+.PHONY : stb_image/fast
 
-Texture.o: Texture.cpp.o
-.PHONY : Texture.o
+#=============================================================================
+# Target rules for targets named imgui
 
-# target to build an object file
-Texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.o
-.PHONY : Texture.cpp.o
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
 
-Texture.i: Texture.cpp.i
-.PHONY : Texture.i
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
 
-# target to preprocess a source file
-Texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.i
-.PHONY : Texture.cpp.i
-
-Texture.s: Texture.cpp.s
-.PHONY : Texture.s
-
-# target to generate assembly for a file
-Texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/Texture.cpp.s
-.PHONY : Texture.cpp.s
-
-VertexArray.o: VertexArray.cpp.o
-.PHONY : VertexArray.o
+include/IndexBuffer.o: include/IndexBuffer.cpp.o
+.PHONY : include/IndexBuffer.o
 
 # target to build an object file
-VertexArray.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.o
-.PHONY : VertexArray.cpp.o
+include/IndexBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/IndexBuffer.cpp.o
+.PHONY : include/IndexBuffer.cpp.o
 
-VertexArray.i: VertexArray.cpp.i
-.PHONY : VertexArray.i
+include/IndexBuffer.i: include/IndexBuffer.cpp.i
+.PHONY : include/IndexBuffer.i
 
 # target to preprocess a source file
-VertexArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.i
-.PHONY : VertexArray.cpp.i
+include/IndexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/IndexBuffer.cpp.i
+.PHONY : include/IndexBuffer.cpp.i
 
-VertexArray.s: VertexArray.cpp.s
-.PHONY : VertexArray.s
+include/IndexBuffer.s: include/IndexBuffer.cpp.s
+.PHONY : include/IndexBuffer.s
 
 # target to generate assembly for a file
-VertexArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexArray.cpp.s
-.PHONY : VertexArray.cpp.s
+include/IndexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/IndexBuffer.cpp.s
+.PHONY : include/IndexBuffer.cpp.s
 
-VertexBuffer.o: VertexBuffer.cpp.o
-.PHONY : VertexBuffer.o
+include/Texture.o: include/Texture.cpp.o
+.PHONY : include/Texture.o
 
 # target to build an object file
-VertexBuffer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBuffer.cpp.o
-.PHONY : VertexBuffer.cpp.o
+include/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/Texture.cpp.o
+.PHONY : include/Texture.cpp.o
 
-VertexBuffer.i: VertexBuffer.cpp.i
-.PHONY : VertexBuffer.i
+include/Texture.i: include/Texture.cpp.i
+.PHONY : include/Texture.i
 
 # target to preprocess a source file
-VertexBuffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBuffer.cpp.i
-.PHONY : VertexBuffer.cpp.i
+include/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/Texture.cpp.i
+.PHONY : include/Texture.cpp.i
 
-VertexBuffer.s: VertexBuffer.cpp.s
-.PHONY : VertexBuffer.s
+include/Texture.s: include/Texture.cpp.s
+.PHONY : include/Texture.s
 
 # target to generate assembly for a file
-VertexBuffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBuffer.cpp.s
-.PHONY : VertexBuffer.cpp.s
+include/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/Texture.cpp.s
+.PHONY : include/Texture.cpp.s
 
-VertexBufferLayout.o: VertexBufferLayout.cpp.o
-.PHONY : VertexBufferLayout.o
+include/VertexArray.o: include/VertexArray.cpp.o
+.PHONY : include/VertexArray.o
 
 # target to build an object file
-VertexBufferLayout.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.o
-.PHONY : VertexBufferLayout.cpp.o
+include/VertexArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexArray.cpp.o
+.PHONY : include/VertexArray.cpp.o
 
-VertexBufferLayout.i: VertexBufferLayout.cpp.i
-.PHONY : VertexBufferLayout.i
+include/VertexArray.i: include/VertexArray.cpp.i
+.PHONY : include/VertexArray.i
 
 # target to preprocess a source file
-VertexBufferLayout.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.i
-.PHONY : VertexBufferLayout.cpp.i
+include/VertexArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexArray.cpp.i
+.PHONY : include/VertexArray.cpp.i
 
-VertexBufferLayout.s: VertexBufferLayout.cpp.s
-.PHONY : VertexBufferLayout.s
+include/VertexArray.s: include/VertexArray.cpp.s
+.PHONY : include/VertexArray.s
 
 # target to generate assembly for a file
-VertexBufferLayout.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/VertexBufferLayout.cpp.s
-.PHONY : VertexBufferLayout.cpp.s
+include/VertexArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexArray.cpp.s
+.PHONY : include/VertexArray.cpp.s
 
-camera.o: camera.cpp.o
-.PHONY : camera.o
+include/VertexBuffer.o: include/VertexBuffer.cpp.o
+.PHONY : include/VertexBuffer.o
 
 # target to build an object file
-camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/camera.cpp.o
-.PHONY : camera.cpp.o
+include/VertexBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBuffer.cpp.o
+.PHONY : include/VertexBuffer.cpp.o
 
-camera.i: camera.cpp.i
-.PHONY : camera.i
+include/VertexBuffer.i: include/VertexBuffer.cpp.i
+.PHONY : include/VertexBuffer.i
 
 # target to preprocess a source file
-camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/camera.cpp.i
-.PHONY : camera.cpp.i
+include/VertexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBuffer.cpp.i
+.PHONY : include/VertexBuffer.cpp.i
 
-camera.s: camera.cpp.s
-.PHONY : camera.s
+include/VertexBuffer.s: include/VertexBuffer.cpp.s
+.PHONY : include/VertexBuffer.s
 
 # target to generate assembly for a file
-camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/camera.cpp.s
-.PHONY : camera.cpp.s
+include/VertexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBuffer.cpp.s
+.PHONY : include/VertexBuffer.cpp.s
+
+include/VertexBufferLayout.o: include/VertexBufferLayout.cpp.o
+.PHONY : include/VertexBufferLayout.o
+
+# target to build an object file
+include/VertexBufferLayout.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o
+.PHONY : include/VertexBufferLayout.cpp.o
+
+include/VertexBufferLayout.i: include/VertexBufferLayout.cpp.i
+.PHONY : include/VertexBufferLayout.i
+
+# target to preprocess a source file
+include/VertexBufferLayout.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.i
+.PHONY : include/VertexBufferLayout.cpp.i
+
+include/VertexBufferLayout.s: include/VertexBufferLayout.cpp.s
+.PHONY : include/VertexBufferLayout.s
+
+# target to generate assembly for a file
+include/VertexBufferLayout.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.s
+.PHONY : include/VertexBufferLayout.cpp.s
+
+include/camera.o: include/camera.cpp.o
+.PHONY : include/camera.o
+
+# target to build an object file
+include/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/camera.cpp.o
+.PHONY : include/camera.cpp.o
+
+include/camera.i: include/camera.cpp.i
+.PHONY : include/camera.i
+
+# target to preprocess a source file
+include/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/camera.cpp.i
+.PHONY : include/camera.cpp.i
+
+include/camera.s: include/camera.cpp.s
+.PHONY : include/camera.s
+
+# target to generate assembly for a file
+include/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/camera.cpp.s
+.PHONY : include/camera.cpp.s
+
+include/map.o: include/map.cpp.o
+.PHONY : include/map.o
+
+# target to build an object file
+include/map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/map.cpp.o
+.PHONY : include/map.cpp.o
+
+include/map.i: include/map.cpp.i
+.PHONY : include/map.i
+
+# target to preprocess a source file
+include/map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/map.cpp.i
+.PHONY : include/map.cpp.i
+
+include/map.s: include/map.cpp.s
+.PHONY : include/map.s
+
+# target to generate assembly for a file
+include/map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/map.cpp.s
+.PHONY : include/map.cpp.s
+
+include/shader.o: include/shader.cpp.o
+.PHONY : include/shader.o
+
+# target to build an object file
+include/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/shader.cpp.o
+.PHONY : include/shader.cpp.o
+
+include/shader.i: include/shader.cpp.i
+.PHONY : include/shader.i
+
+# target to preprocess a source file
+include/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/shader.cpp.i
+.PHONY : include/shader.cpp.i
+
+include/shader.s: include/shader.cpp.s
+.PHONY : include/shader.s
+
+# target to generate assembly for a file
+include/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/shader.cpp.s
+.PHONY : include/shader.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -286,7 +374,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -294,56 +382,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-map.o: map.cpp.o
-.PHONY : map.o
-
-# target to build an object file
-map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/map.cpp.o
-.PHONY : map.cpp.o
-
-map.i: map.cpp.i
-.PHONY : map.i
-
-# target to preprocess a source file
-map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/map.cpp.i
-.PHONY : map.cpp.i
-
-map.s: map.cpp.s
-.PHONY : map.s
-
-# target to generate assembly for a file
-map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/map.cpp.s
-.PHONY : map.cpp.s
-
-shader.o: shader.cpp.o
-.PHONY : shader.o
-
-# target to build an object file
-shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/shader.cpp.o
-.PHONY : shader.cpp.o
-
-shader.i: shader.cpp.i
-.PHONY : shader.i
-
-# target to preprocess a source file
-shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/shader.cpp.i
-.PHONY : shader.cpp.i
-
-shader.s: shader.cpp.s
-.PHONY : shader.s
-
-# target to generate assembly for a file
-shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/shader.cpp.s
-.PHONY : shader.cpp.s
 
 # Help Target
 help:
@@ -353,34 +393,37 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... program"
-	@echo "... IndexBuffer.o"
-	@echo "... IndexBuffer.i"
-	@echo "... IndexBuffer.s"
-	@echo "... Texture.o"
-	@echo "... Texture.i"
-	@echo "... Texture.s"
-	@echo "... VertexArray.o"
-	@echo "... VertexArray.i"
-	@echo "... VertexArray.s"
-	@echo "... VertexBuffer.o"
-	@echo "... VertexBuffer.i"
-	@echo "... VertexBuffer.s"
-	@echo "... VertexBufferLayout.o"
-	@echo "... VertexBufferLayout.i"
-	@echo "... VertexBufferLayout.s"
-	@echo "... camera.o"
-	@echo "... camera.i"
-	@echo "... camera.s"
+	@echo "... glad"
+	@echo "... imgui"
+	@echo "... opengl"
+	@echo "... stb_image"
+	@echo "... include/IndexBuffer.o"
+	@echo "... include/IndexBuffer.i"
+	@echo "... include/IndexBuffer.s"
+	@echo "... include/Texture.o"
+	@echo "... include/Texture.i"
+	@echo "... include/Texture.s"
+	@echo "... include/VertexArray.o"
+	@echo "... include/VertexArray.i"
+	@echo "... include/VertexArray.s"
+	@echo "... include/VertexBuffer.o"
+	@echo "... include/VertexBuffer.i"
+	@echo "... include/VertexBuffer.s"
+	@echo "... include/VertexBufferLayout.o"
+	@echo "... include/VertexBufferLayout.i"
+	@echo "... include/VertexBufferLayout.s"
+	@echo "... include/camera.o"
+	@echo "... include/camera.i"
+	@echo "... include/camera.s"
+	@echo "... include/map.o"
+	@echo "... include/map.i"
+	@echo "... include/map.s"
+	@echo "... include/shader.o"
+	@echo "... include/shader.i"
+	@echo "... include/shader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... map.o"
-	@echo "... map.i"
-	@echo "... map.s"
-	@echo "... shader.o"
-	@echo "... shader.i"
-	@echo "... shader.s"
 .PHONY : help
 
 
@@ -392,6 +435,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/darius/Dev/cpp/test_opengl/src/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

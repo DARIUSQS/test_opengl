@@ -1,3 +1,14 @@
-/home/darius/Dev/cpp/test_opengl/src/CMakeFiles/program.dir
+/home/darius/Dev/cpp/test_opengl/src/CMakeFiles/opengl.dir
 /home/darius/Dev/cpp/test_opengl/src/CMakeFiles/edit_cache.dir
 /home/darius/Dev/cpp/test_opengl/src/CMakeFiles/rebuild_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/glad/CMakeFiles/glad.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/glad/CMakeFiles/edit_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/glad/CMakeFiles/rebuild_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/CMakeFiles/stb_image.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/CMakeFiles/edit_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/CMakeFiles/rebuild_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/glm/CMakeFiles/edit_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/glm/CMakeFiles/rebuild_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/imgui/CMakeFiles/imgui.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/imgui/CMakeFiles/edit_cache.dir
+/home/darius/Dev/cpp/test_opengl/src/vendor/imgui/CMakeFiles/rebuild_cache.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/program.dir/IndexBuffer.cpp.o CMakeFiles/program.dir/Texture.cpp.o CMakeFiles/program.dir/VertexArray.cpp.o CMakeFiles/program.dir/VertexBuffer.cpp.o CMakeFiles/program.dir/VertexBufferLayout.cpp.o CMakeFiles/program.dir/camera.cpp.o CMakeFiles/program.dir/main.cpp.o CMakeFiles/program.dir/map.cpp.o CMakeFiles/program.dir/shader.cpp.o -o program  -lglfw
