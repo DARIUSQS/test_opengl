@@ -49,7 +49,6 @@ static void checkForInput(GLFWwindow *window, int key, int scancode, int action,
     {
         if(cursor_disabled) glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         else glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-        std::cout << "muie steaua\n";
         cursor_disabled =! cursor_disabled;
     }
     if(key == GLFW_KEY_W && action == GLFW_PRESS)

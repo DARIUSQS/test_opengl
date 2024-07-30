@@ -166,7 +166,7 @@ imgui: cmake_check_build_system
 
 # fast build rule for target.
 imgui/fast:
-	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+	$(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 include/IndexBuffer.o: include/IndexBuffer.cpp.o

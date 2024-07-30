@@ -231,7 +231,7 @@ glm_IS_TOP_LEVEL:STATIC=OFF
 glm_SOURCE_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src/vendor/glm
 
 //Value Computed by CMake
-imgui_BINARY_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src/vendor/imgui
+imgui_BINARY_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude
 
 //Value Computed by CMake
 imgui_IS_TOP_LEVEL:STATIC=OFF
@@ -240,7 +240,7 @@ imgui_IS_TOP_LEVEL:STATIC=OFF
 imgui_LIB_DEPENDS:STATIC=general;glfw;general;glad;
 
 //Value Computed by CMake
-imgui_SOURCE_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src/vendor/imgui
+imgui_SOURCE_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude
 
 //Value Computed by CMake
 opengl_BINARY_DIR:STATIC=/home/darius/Dev/cpp/test_opengl/src

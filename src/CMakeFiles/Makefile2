@@ -67,14 +67,14 @@ all: CMakeFiles/opengl.dir/all
 all: vendor/glad/all
 all: vendor/stb_image/all
 all: vendor/glm/all
-all: vendor/imgui/all
+all: vendor/imguiInclude/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: vendor/glad/preinstall
 preinstall: vendor/stb_image/preinstall
 preinstall: vendor/glm/preinstall
-preinstall: vendor/imgui/preinstall
+preinstall: vendor/imguiInclude/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -82,7 +82,7 @@ clean: CMakeFiles/opengl.dir/clean
 clean: vendor/glad/clean
 clean: vendor/stb_image/clean
 clean: vendor/glm/clean
-clean: vendor/imgui/clean
+clean: vendor/imguiInclude/clean
 .PHONY : clean
 
 #=============================================================================
@@ -116,19 +116,19 @@ vendor/glm/clean:
 .PHONY : vendor/glm/clean
 
 #=============================================================================
-# Directory level rules for directory vendor/imgui
+# Directory level rules for directory vendor/imguiInclude
 
 # Recursive "all" directory target.
-vendor/imgui/all: vendor/imgui/CMakeFiles/imgui.dir/all
-.PHONY : vendor/imgui/all
+vendor/imguiInclude/all: vendor/imguiInclude/CMakeFiles/imgui.dir/all
+.PHONY : vendor/imguiInclude/all
 
 # Recursive "preinstall" directory target.
-vendor/imgui/preinstall:
-.PHONY : vendor/imgui/preinstall
+vendor/imguiInclude/preinstall:
+.PHONY : vendor/imguiInclude/preinstall
 
 # Recursive "clean" directory target.
-vendor/imgui/clean: vendor/imgui/CMakeFiles/imgui.dir/clean
-.PHONY : vendor/imgui/clean
+vendor/imguiInclude/clean: vendor/imguiInclude/CMakeFiles/imgui.dir/clean
+.PHONY : vendor/imguiInclude/clean
 
 #=============================================================================
 # Directory level rules for directory vendor/stb_image
@@ -151,7 +151,7 @@ vendor/stb_image/clean: vendor/stb_image/CMakeFiles/stb_image.dir/clean
 # All Build rule for target.
 CMakeFiles/opengl.dir/all: vendor/glad/CMakeFiles/glad.dir/all
 CMakeFiles/opengl.dir/all: vendor/stb_image/CMakeFiles/stb_image.dir/all
-CMakeFiles/opengl.dir/all: vendor/imgui/CMakeFiles/imgui.dir/all
+CMakeFiles/opengl.dir/all: vendor/imguiInclude/CMakeFiles/imgui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target opengl"
@@ -226,30 +226,30 @@ vendor/stb_image/CMakeFiles/stb_image.dir/clean:
 .PHONY : vendor/stb_image/CMakeFiles/stb_image.dir/clean
 
 #=============================================================================
-# Target rules for target vendor/imgui/CMakeFiles/imgui.dir
+# Target rules for target vendor/imguiInclude/CMakeFiles/imgui.dir
 
 # All Build rule for target.
-vendor/imgui/CMakeFiles/imgui.dir/all: vendor/glad/CMakeFiles/glad.dir/all
-	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/depend
-	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+vendor/imguiInclude/CMakeFiles/imgui.dir/all: vendor/glad/CMakeFiles/glad.dir/all
+	$(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=3,4,5,6,7,8,9,10 "Built target imgui"
-.PHONY : vendor/imgui/CMakeFiles/imgui.dir/all
+.PHONY : vendor/imguiInclude/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
-vendor/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+vendor/imguiInclude/CMakeFiles/imgui.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/CMakeFiles/imgui.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/CMakeFiles/imgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 0
-.PHONY : vendor/imgui/CMakeFiles/imgui.dir/rule
+.PHONY : vendor/imguiInclude/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
-imgui: vendor/imgui/CMakeFiles/imgui.dir/rule
+imgui: vendor/imguiInclude/CMakeFiles/imgui.dir/rule
 .PHONY : imgui
 
 # clean rule for target.
-vendor/imgui/CMakeFiles/imgui.dir/clean:
-	$(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/clean
-.PHONY : vendor/imgui/CMakeFiles/imgui.dir/clean
+vendor/imguiInclude/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/clean
+.PHONY : vendor/imguiInclude/CMakeFiles/imgui.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

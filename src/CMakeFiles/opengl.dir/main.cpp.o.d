@@ -388,7 +388,7 @@ CMakeFiles/opengl.dir/main.cpp.o: \
  /home/darius/Dev/cpp/test_opengl/src/include/IndexBuffer.h \
  /home/darius/Dev/cpp/test_opengl/src/include/VertexArray.h \
  /home/darius/Dev/cpp/test_opengl/src/include/Texture.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_glfw.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_glfw.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h

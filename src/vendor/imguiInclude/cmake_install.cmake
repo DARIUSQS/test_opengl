@@ -1,4 +1,4 @@
-# Install script for directory: /home/darius/Dev/cpp/test_opengl/src/vendor/imgui
+# Install script for directory: /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

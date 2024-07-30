@@ -1,8 +1,8 @@
-vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o: \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui_draw.cpp \
+vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o: \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui_draw.cpp \
  /usr/include/stdc-predef.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
@@ -13,7 +13,7 @@ vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui_internal.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -189,6 +189,6 @@ vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/keylockerintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/amxfp16intrin.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imstb_textedit.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imstb_rectpack.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imstb_truetype.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imstb_textedit.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imstb_rectpack.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imstb_truetype.h

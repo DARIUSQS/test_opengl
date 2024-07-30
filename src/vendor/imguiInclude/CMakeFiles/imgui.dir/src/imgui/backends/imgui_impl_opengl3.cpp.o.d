@@ -1,8 +1,8 @@
-vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o: \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.cpp \
+vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o: \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.cpp \
  /usr/include/stdc-predef.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
@@ -13,7 +13,7 @@ vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h \
  /usr/include/stdio.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
@@ -26,7 +26,7 @@ vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o: \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3_loader.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3_loader.h \
  /usr/include/c++/14.1.1/stdlib.h /usr/include/c++/14.1.1/cstdlib \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \

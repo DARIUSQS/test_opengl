@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/darius/Dev/cpp/test_opengl/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles /home/darius/Dev/cpp/test_opengl/src/vendor/imgui//CMakeFiles/progress.marks
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/all
+	cd /home/darius/Dev/cpp/test_opengl/src && $(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude//CMakeFiles/progress.marks
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/clean
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/preinstall
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/preinstall
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -118,17 +118,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-vendor/imgui/CMakeFiles/imgui.dir/rule:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imgui/CMakeFiles/imgui.dir/rule
-.PHONY : vendor/imgui/CMakeFiles/imgui.dir/rule
+vendor/imguiInclude/CMakeFiles/imgui.dir/rule:
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/imguiInclude/CMakeFiles/imgui.dir/rule
+.PHONY : vendor/imguiInclude/CMakeFiles/imgui.dir/rule
 
 # Convenience name for target.
-imgui: vendor/imgui/CMakeFiles/imgui.dir/rule
+imgui: vendor/imguiInclude/CMakeFiles/imgui.dir/rule
 .PHONY : imgui
 
 # fast build rule for target.
 imgui/fast:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/build
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/build
 .PHONY : imgui/fast
 
 src/imgui/backends/imgui_impl_glfw.o: src/imgui/backends/imgui_impl_glfw.cpp.o
@@ -136,7 +136,7 @@ src/imgui/backends/imgui_impl_glfw.o: src/imgui/backends/imgui_impl_glfw.cpp.o
 
 # target to build an object file
 src/imgui/backends/imgui_impl_glfw.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.o
 .PHONY : src/imgui/backends/imgui_impl_glfw.cpp.o
 
 src/imgui/backends/imgui_impl_glfw.i: src/imgui/backends/imgui_impl_glfw.cpp.i
@@ -144,7 +144,7 @@ src/imgui/backends/imgui_impl_glfw.i: src/imgui/backends/imgui_impl_glfw.cpp.i
 
 # target to preprocess a source file
 src/imgui/backends/imgui_impl_glfw.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.i
 .PHONY : src/imgui/backends/imgui_impl_glfw.cpp.i
 
 src/imgui/backends/imgui_impl_glfw.s: src/imgui/backends/imgui_impl_glfw.cpp.s
@@ -152,7 +152,7 @@ src/imgui/backends/imgui_impl_glfw.s: src/imgui/backends/imgui_impl_glfw.cpp.s
 
 # target to generate assembly for a file
 src/imgui/backends/imgui_impl_glfw.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.s
 .PHONY : src/imgui/backends/imgui_impl_glfw.cpp.s
 
 src/imgui/backends/imgui_impl_opengl3.o: src/imgui/backends/imgui_impl_opengl3.cpp.o
@@ -160,7 +160,7 @@ src/imgui/backends/imgui_impl_opengl3.o: src/imgui/backends/imgui_impl_opengl3.c
 
 # target to build an object file
 src/imgui/backends/imgui_impl_opengl3.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o
 .PHONY : src/imgui/backends/imgui_impl_opengl3.cpp.o
 
 src/imgui/backends/imgui_impl_opengl3.i: src/imgui/backends/imgui_impl_opengl3.cpp.i
@@ -168,7 +168,7 @@ src/imgui/backends/imgui_impl_opengl3.i: src/imgui/backends/imgui_impl_opengl3.c
 
 # target to preprocess a source file
 src/imgui/backends/imgui_impl_opengl3.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.i
 .PHONY : src/imgui/backends/imgui_impl_opengl3.cpp.i
 
 src/imgui/backends/imgui_impl_opengl3.s: src/imgui/backends/imgui_impl_opengl3.cpp.s
@@ -176,7 +176,7 @@ src/imgui/backends/imgui_impl_opengl3.s: src/imgui/backends/imgui_impl_opengl3.c
 
 # target to generate assembly for a file
 src/imgui/backends/imgui_impl_opengl3.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.s
 .PHONY : src/imgui/backends/imgui_impl_opengl3.cpp.s
 
 src/imgui/imgui.o: src/imgui/imgui.cpp.o
@@ -184,7 +184,7 @@ src/imgui/imgui.o: src/imgui/imgui.cpp.o
 
 # target to build an object file
 src/imgui/imgui.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.o
 .PHONY : src/imgui/imgui.cpp.o
 
 src/imgui/imgui.i: src/imgui/imgui.cpp.i
@@ -192,7 +192,7 @@ src/imgui/imgui.i: src/imgui/imgui.cpp.i
 
 # target to preprocess a source file
 src/imgui/imgui.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.i
 .PHONY : src/imgui/imgui.cpp.i
 
 src/imgui/imgui.s: src/imgui/imgui.cpp.s
@@ -200,7 +200,7 @@ src/imgui/imgui.s: src/imgui/imgui.cpp.s
 
 # target to generate assembly for a file
 src/imgui/imgui.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui.cpp.s
 .PHONY : src/imgui/imgui.cpp.s
 
 src/imgui/imgui_demo.o: src/imgui/imgui_demo.cpp.o
@@ -208,7 +208,7 @@ src/imgui/imgui_demo.o: src/imgui/imgui_demo.cpp.o
 
 # target to build an object file
 src/imgui/imgui_demo.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.o
 .PHONY : src/imgui/imgui_demo.cpp.o
 
 src/imgui/imgui_demo.i: src/imgui/imgui_demo.cpp.i
@@ -216,7 +216,7 @@ src/imgui/imgui_demo.i: src/imgui/imgui_demo.cpp.i
 
 # target to preprocess a source file
 src/imgui/imgui_demo.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.i
 .PHONY : src/imgui/imgui_demo.cpp.i
 
 src/imgui/imgui_demo.s: src/imgui/imgui_demo.cpp.s
@@ -224,7 +224,7 @@ src/imgui/imgui_demo.s: src/imgui/imgui_demo.cpp.s
 
 # target to generate assembly for a file
 src/imgui/imgui_demo.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.s
 .PHONY : src/imgui/imgui_demo.cpp.s
 
 src/imgui/imgui_draw.o: src/imgui/imgui_draw.cpp.o
@@ -232,7 +232,7 @@ src/imgui/imgui_draw.o: src/imgui/imgui_draw.cpp.o
 
 # target to build an object file
 src/imgui/imgui_draw.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.o
 .PHONY : src/imgui/imgui_draw.cpp.o
 
 src/imgui/imgui_draw.i: src/imgui/imgui_draw.cpp.i
@@ -240,7 +240,7 @@ src/imgui/imgui_draw.i: src/imgui/imgui_draw.cpp.i
 
 # target to preprocess a source file
 src/imgui/imgui_draw.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.i
 .PHONY : src/imgui/imgui_draw.cpp.i
 
 src/imgui/imgui_draw.s: src/imgui/imgui_draw.cpp.s
@@ -248,7 +248,7 @@ src/imgui/imgui_draw.s: src/imgui/imgui_draw.cpp.s
 
 # target to generate assembly for a file
 src/imgui/imgui_draw.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_draw.cpp.s
 .PHONY : src/imgui/imgui_draw.cpp.s
 
 src/imgui/imgui_tables.o: src/imgui/imgui_tables.cpp.o
@@ -256,7 +256,7 @@ src/imgui/imgui_tables.o: src/imgui/imgui_tables.cpp.o
 
 # target to build an object file
 src/imgui/imgui_tables.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.o
 .PHONY : src/imgui/imgui_tables.cpp.o
 
 src/imgui/imgui_tables.i: src/imgui/imgui_tables.cpp.i
@@ -264,7 +264,7 @@ src/imgui/imgui_tables.i: src/imgui/imgui_tables.cpp.i
 
 # target to preprocess a source file
 src/imgui/imgui_tables.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.i
 .PHONY : src/imgui/imgui_tables.cpp.i
 
 src/imgui/imgui_tables.s: src/imgui/imgui_tables.cpp.s
@@ -272,7 +272,7 @@ src/imgui/imgui_tables.s: src/imgui/imgui_tables.cpp.s
 
 # target to generate assembly for a file
 src/imgui/imgui_tables.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_tables.cpp.s
 .PHONY : src/imgui/imgui_tables.cpp.s
 
 src/imgui/imgui_widgets.o: src/imgui/imgui_widgets.cpp.o
@@ -280,7 +280,7 @@ src/imgui/imgui_widgets.o: src/imgui/imgui_widgets.cpp.o
 
 # target to build an object file
 src/imgui/imgui_widgets.cpp.o:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.o
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.o
 .PHONY : src/imgui/imgui_widgets.cpp.o
 
 src/imgui/imgui_widgets.i: src/imgui/imgui_widgets.cpp.i
@@ -288,7 +288,7 @@ src/imgui/imgui_widgets.i: src/imgui/imgui_widgets.cpp.i
 
 # target to preprocess a source file
 src/imgui/imgui_widgets.cpp.i:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.i
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.i
 .PHONY : src/imgui/imgui_widgets.cpp.i
 
 src/imgui/imgui_widgets.s: src/imgui/imgui_widgets.cpp.s
@@ -296,7 +296,7 @@ src/imgui/imgui_widgets.s: src/imgui/imgui_widgets.cpp.s
 
 # target to generate assembly for a file
 src/imgui/imgui_widgets.cpp.s:
-	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imgui/CMakeFiles/imgui.dir/build.make vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.s
+	cd /home/darius/Dev/cpp/test_opengl/src && $(MAKE) $(MAKESILENT) -f vendor/imguiInclude/CMakeFiles/imgui.dir/build.make vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_widgets.cpp.s
 .PHONY : src/imgui/imgui_widgets.cpp.s
 
 # Help Target

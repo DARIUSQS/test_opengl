@@ -1,8 +1,8 @@
-vendor/imgui/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.o: \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui_demo.cpp \
+vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/imgui_demo.cpp.o: \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui_demo.cpp \
  /usr/include/stdc-predef.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stddef.h \
