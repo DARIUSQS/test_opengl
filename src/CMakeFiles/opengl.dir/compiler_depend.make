@@ -858,6 +858,9 @@ CMakeFiles/opengl.dir/include/map.cpp.o: include/map.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/syslimits.h
 
+CMakeFiles/opengl.dir/include/material.cpp.o: include/material.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/opengl.dir/include/shader.cpp.o: include/shader.cpp \
   include/shader.h \
   vendor/glad/include/glad/glad.h \
@@ -1265,6 +1268,7 @@ CMakeFiles/opengl.dir/main.cpp.o: main.cpp \
   include/VertexArray.h \
   include/VertexBuffer.h \
   include/VertexBufferLayout.h \
+  include/material.h \
   include/shader.h \
   vendor/glad/include/glad/glad.h \
   vendor/glad/include/glad/khrplatform.h \
@@ -1723,6 +1727,8 @@ CMakeFiles/opengl.dir/main.cpp.o: main.cpp \
 
 vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h:
 
+include/material.h:
+
 /usr/include/c++/14.1.1/bits/sstream.tcc:
 
 include/shader.cpp:
@@ -1988,6 +1994,8 @@ vendor/glm/include/glm/ext/matrix_float2x4.hpp:
 vendor/glm/include/glm/ext/quaternion_transform.inl:
 
 /usr/include/c++/14.1.1/bits/stringfwd.h:
+
+include/material.cpp:
 
 /usr/include/alloca.h:
 

@@ -865,6 +865,10 @@ CMakeFiles/opengl.dir/include/map.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/syslimits.h
 
+CMakeFiles/opengl.dir/include/material.cpp.o
+ /home/darius/Dev/cpp/test_opengl/src/include/material.cpp
+ /usr/include/stdc-predef.h
+
 CMakeFiles/opengl.dir/include/shader.cpp.o
  /home/darius/Dev/cpp/test_opengl/src/include/shader.cpp
  /home/darius/Dev/cpp/test_opengl/src/include/shader.h
@@ -1274,6 +1278,7 @@ CMakeFiles/opengl.dir/main.cpp.o
  /home/darius/Dev/cpp/test_opengl/src/include/VertexArray.h
  /home/darius/Dev/cpp/test_opengl/src/include/VertexBuffer.h
  /home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.h
+ /home/darius/Dev/cpp/test_opengl/src/include/material.h
  /home/darius/Dev/cpp/test_opengl/src/include/shader.h
  /home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad/glad.h
  /home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad/khrplatform.h

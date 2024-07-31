@@ -337,6 +337,30 @@ include/map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/map.cpp.s
 .PHONY : include/map.cpp.s
 
+include/material.o: include/material.cpp.o
+.PHONY : include/material.o
+
+# target to build an object file
+include/material.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/material.cpp.o
+.PHONY : include/material.cpp.o
+
+include/material.i: include/material.cpp.i
+.PHONY : include/material.i
+
+# target to preprocess a source file
+include/material.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/material.cpp.i
+.PHONY : include/material.cpp.i
+
+include/material.s: include/material.cpp.s
+.PHONY : include/material.s
+
+# target to generate assembly for a file
+include/material.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/include/material.cpp.s
+.PHONY : include/material.cpp.s
+
 include/shader.o: include/shader.cpp.o
 .PHONY : include/shader.o
 
@@ -418,6 +442,9 @@ help:
 	@echo "... include/map.o"
 	@echo "... include/map.i"
 	@echo "... include/map.s"
+	@echo "... include/material.o"
+	@echo "... include/material.i"
+	@echo "... include/material.s"
 	@echo "... include/shader.o"
 	@echo "... include/shader.i"
 	@echo "... include/shader.s"

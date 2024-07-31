@@ -12,6 +12,7 @@ set(OLD_GLOB
   "/home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.cpp"
   "/home/darius/Dev/cpp/test_opengl/src/include/camera.cpp"
   "/home/darius/Dev/cpp/test_opengl/src/include/map.cpp"
+  "/home/darius/Dev/cpp/test_opengl/src/include/material.cpp"
   "/home/darius/Dev/cpp/test_opengl/src/include/shader.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

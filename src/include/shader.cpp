@@ -89,6 +89,11 @@ void Shader::SetVec3(const std::string& str, float v1, float v2, float v3)
     glUniform3f(glGetUniformLocation(ProgramID, str.c_str()), v1, v2, v3);
 }
 
+void Shader::SetFloat(const std::string& str, float val)
+{
+    glUniform1f(glGetUniformLocation(ProgramID, str.c_str()), val);
+}
+
 void Shader::Bind()
 {
     glUseProgram(ProgramID);

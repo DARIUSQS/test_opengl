@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.cpp" "CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o" "gcc" "CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o.d"
   "/home/darius/Dev/cpp/test_opengl/src/include/camera.cpp" "CMakeFiles/opengl.dir/include/camera.cpp.o" "gcc" "CMakeFiles/opengl.dir/include/camera.cpp.o.d"
   "/home/darius/Dev/cpp/test_opengl/src/include/map.cpp" "CMakeFiles/opengl.dir/include/map.cpp.o" "gcc" "CMakeFiles/opengl.dir/include/map.cpp.o.d"
+  "/home/darius/Dev/cpp/test_opengl/src/include/material.cpp" "CMakeFiles/opengl.dir/include/material.cpp.o" "gcc" "CMakeFiles/opengl.dir/include/material.cpp.o.d"
   "/home/darius/Dev/cpp/test_opengl/src/include/shader.cpp" "CMakeFiles/opengl.dir/include/shader.cpp.o" "gcc" "CMakeFiles/opengl.dir/include/shader.cpp.o.d"
   "/home/darius/Dev/cpp/test_opengl/src/main.cpp" "CMakeFiles/opengl.dir/main.cpp.o" "gcc" "CMakeFiles/opengl.dir/main.cpp.o.d"
   )

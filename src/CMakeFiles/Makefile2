@@ -154,12 +154,12 @@ CMakeFiles/opengl.dir/all: vendor/stb_image/CMakeFiles/stb_image.dir/all
 CMakeFiles/opengl.dir/all: vendor/imguiInclude/CMakeFiles/imgui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl.dir/build.make CMakeFiles/opengl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20,21 "Built target opengl"
 .PHONY : CMakeFiles/opengl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/opengl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/opengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/darius/Dev/cpp/test_opengl/src/CMakeFiles 0
 .PHONY : CMakeFiles/opengl.dir/rule
@@ -206,7 +206,7 @@ vendor/glad/CMakeFiles/glad.dir/clean:
 vendor/stb_image/CMakeFiles/stb_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f vendor/stb_image/CMakeFiles/stb_image.dir/build.make vendor/stb_image/CMakeFiles/stb_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f vendor/stb_image/CMakeFiles/stb_image.dir/build.make vendor/stb_image/CMakeFiles/stb_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=21,22 "Built target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=22,23 "Built target stb_image"
 .PHONY : vendor/stb_image/CMakeFiles/stb_image.dir/all
 
 # Build rule for subdir invocation for target.

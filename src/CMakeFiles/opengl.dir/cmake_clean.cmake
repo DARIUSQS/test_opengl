@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/opengl.dir/include/camera.cpp.o.d"
   "CMakeFiles/opengl.dir/include/map.cpp.o"
   "CMakeFiles/opengl.dir/include/map.cpp.o.d"
+  "CMakeFiles/opengl.dir/include/material.cpp.o"
+  "CMakeFiles/opengl.dir/include/material.cpp.o.d"
   "CMakeFiles/opengl.dir/include/shader.cpp.o"
   "CMakeFiles/opengl.dir/include/shader.cpp.o.d"
   "CMakeFiles/opengl.dir/main.cpp.o"

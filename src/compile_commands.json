@@ -49,6 +49,12 @@
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/material.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/material.cpp",
+  "file": "/home/darius/Dev/cpp/test_opengl/src/include/material.cpp",
+  "output": "CMakeFiles/opengl.dir/include/material.cpp.o"
+},
+{
+  "directory": "/home/darius/Dev/cpp/test_opengl/src",
   "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/shader.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/shader.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/shader.cpp",
   "output": "CMakeFiles/opengl.dir/include/shader.cpp.o"

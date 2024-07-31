@@ -364,6 +364,7 @@ CMakeFiles/opengl.dir/main.cpp.o: \
  /usr/include/strings.h \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/gtc/type_ptr.inl \
  /home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/fwd.hpp \
  /home/darius/Dev/cpp/test_opengl/src/include/shader.h \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/glm.hpp \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/detail/_fixes.hpp \
@@ -376,7 +377,6 @@ CMakeFiles/opengl.dir/main.cpp.o: \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/uio_lim.h /usr/include/c++/14.1.1/cfloat \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/float.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/fwd.hpp \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/packing.hpp \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/detail/func_packing.inl \
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/detail/type_half.hpp \
@@ -388,6 +388,7 @@ CMakeFiles/opengl.dir/main.cpp.o: \
  /home/darius/Dev/cpp/test_opengl/src/include/IndexBuffer.h \
  /home/darius/Dev/cpp/test_opengl/src/include/VertexArray.h \
  /home/darius/Dev/cpp/test_opengl/src/include/Texture.h \
+ /home/darius/Dev/cpp/test_opengl/src/include/material.h \
  /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h \
  /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h \
  /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_glfw.h \
