@@ -41,29 +41,32 @@ double pitch = 0.0f, yaw = -90.0f;
 
 double lastFrameTime = 0, deltaTime = 0;
 
-static void checkForInput(GLFWwindow *window, int key, int scancode, int action, int mods)
+static void keyboardcallback(GLFWwindow *window, int key, int scancode, int action, int mods)
 {
-    const float CameraSpeed = 2 * deltaTime;
-    
     if(key == GLFW_KEY_P && action == GLFW_PRESS)
     {
         if(cursor_disabled) glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         else glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
         cursor_disabled =! cursor_disabled;
     }
-    if(key == GLFW_KEY_W && action == GLFW_PRESS)
+}
+
+static void checkForInput(GLFWwindow *window)
+{
+    const float CameraSpeed = 2 * deltaTime;
+    if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {
         CameraPos += CameraSpeed * CameraFront;
     }
-    if(key == GLFW_KEY_S && action == GLFW_PRESS)
+    if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
     {
         CameraPos -= CameraSpeed * CameraFront;
     }
-    if(key == GLFW_KEY_D && action == GLFW_PRESS)
+    if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
         CameraPos += glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
     }
-    if(key == GLFW_KEY_A && action == GLFW_PRESS)
+    if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
     {
         CameraPos -= glm::normalize(glm::cross(CameraFront, CameraUp)) * CameraSpeed;
     }
@@ -113,7 +116,7 @@ int main(void)
 
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glfwSetCursorPosCallback(window, cursor_position_callback);
-    glfwSetKeyCallback(window, checkForInput);
+    glfwSetKeyCallback(window, keyboardcallback);
     if (!window)
     {
         glfwTerminate();
@@ -214,6 +217,7 @@ int main(void)
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable; 
     ImGui::StyleColorsDark();
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 100");
@@ -225,6 +229,8 @@ int main(void)
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        checkForInput(window);
 
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();

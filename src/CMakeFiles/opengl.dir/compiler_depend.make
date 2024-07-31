@@ -1460,10 +1460,10 @@ CMakeFiles/opengl.dir/main.cpp.o: main.cpp \
   vendor/glm/include/glm/gtc/type_ptr.inl \
   vendor/glm/include/glm/integer.hpp \
   vendor/glm/include/glm/packing.hpp \
-  vendor/imgui/src/imgui/backends/imgui_impl_glfw.h \
-  vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h \
-  vendor/imgui/src/imgui/imconfig.h \
-  vendor/imgui/src/imgui/imgui.h \
+  vendor/imguiInclude/src/imgui/backends/imgui_impl_glfw.h \
+  vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h \
+  vendor/imguiInclude/src/imgui/imconfig.h \
+  vendor/imguiInclude/src/imgui/imgui.h \
   /usr/include/GL/gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
@@ -1721,9 +1721,7 @@ CMakeFiles/opengl.dir/main.cpp.o: main.cpp \
 
 /usr/include/GLFW/glfw3.h:
 
-vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h:
-
-vendor/imgui/src/imgui/backends/imgui_impl_glfw.h:
+vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h:
 
 /usr/include/c++/14.1.1/bits/sstream.tcc:
 
@@ -1810,6 +1808,8 @@ vendor/glm/include/glm/vec3.hpp:
 /usr/include/c++/14.1.1/bits/istream.tcc:
 
 vendor/glm/include/glm/mat2x2.hpp:
+
+vendor/imguiInclude/src/imgui/backends/imgui_impl_glfw.h:
 
 vendor/glm/include/glm/gtc/type_ptr.hpp:
 
@@ -2181,6 +2181,8 @@ vendor/glm/include/glm/vec2.hpp:
 
 /usr/include/features-time64.h:
 
+vendor/imguiInclude/src/imgui/imgui.h:
+
 /usr/include/bits/select.h:
 
 /usr/include/linux/limits.h:
@@ -2367,6 +2369,8 @@ vendor/glm/include/glm/ext/vector_double1_precision.hpp:
 
 vendor/glm/include/glm/ext/matrix_float2x3_precision.hpp:
 
+vendor/imguiInclude/src/imgui/imconfig.h:
+
 vendor/glm/include/glm/ext/matrix_double2x3.hpp:
 
 /usr/include/bits/mathcalls-helper-functions.h:
@@ -2483,8 +2487,6 @@ vendor/glm/include/glm/ext/vector_bool4.hpp:
 
 /usr/include/c++/14.1.1/tr1/riemann_zeta.tcc:
 
-vendor/imgui/src/imgui/imconfig.h:
-
 /usr/include/c++/14.1.1/tr1/special_function_util.h:
 
 /usr/include/c++/14.1.1/sstream:
@@ -2556,8 +2558,6 @@ vendor/glm/include/glm/detail/func_vector_relational.inl:
 vendor/glm/include/glm/ext/quaternion_float.hpp:
 
 vendor/glm/include/glm/detail/type_mat3x4.inl:
-
-vendor/imgui/src/imgui/imgui.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/mmintrin.h:
 

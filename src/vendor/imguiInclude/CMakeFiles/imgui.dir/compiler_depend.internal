@@ -40,11 +40,10 @@ vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_glfw.cpp.
 
 vendor/imguiInclude/CMakeFiles/imgui.dir/src/imgui/backends/imgui_impl_opengl3.cpp.o
  /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.cpp
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.cpp
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3_loader.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3_loader.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h
  /usr/include/alloca.h
  /usr/include/assert.h
  /usr/include/bits/atomic_wide_counter.h

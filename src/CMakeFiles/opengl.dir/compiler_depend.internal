@@ -1469,10 +1469,10 @@ CMakeFiles/opengl.dir/main.cpp.o
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/gtc/type_ptr.inl
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/integer.hpp
  /home/darius/Dev/cpp/test_opengl/src/vendor/glm/include/glm/packing.hpp
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_glfw.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/backends/imgui_impl_opengl3.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imconfig.h
- /home/darius/Dev/cpp/test_opengl/src/vendor/imgui/src/imgui/imgui.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_glfw.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/backends/imgui_impl_opengl3.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imconfig.h
+ /home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src/imgui/imgui.h
  /usr/include/GL/gl.h
  /usr/include/GLFW/glfw3.h
  /usr/include/alloca.h
