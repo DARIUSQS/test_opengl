@@ -110,7 +110,7 @@ CMakeFiles/opengl.dir/include/Texture.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include/../include/stb_image.h \
+ /home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include/stb_image.h \
  /usr/include/c++/14.1.1/stdlib.h /usr/include/string.h \
  /usr/include/strings.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.1.1/include/limits.h \

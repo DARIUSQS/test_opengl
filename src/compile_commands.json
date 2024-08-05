@@ -1,61 +1,61 @@
 [
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/main.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/main.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/main.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/main.cpp",
   "output": "CMakeFiles/opengl.dir/main.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/IndexBuffer.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/IndexBuffer.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/IndexBuffer.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/IndexBuffer.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/IndexBuffer.cpp",
   "output": "CMakeFiles/opengl.dir/include/IndexBuffer.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/Texture.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/Texture.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/Texture.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/Texture.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/Texture.cpp",
   "output": "CMakeFiles/opengl.dir/include/Texture.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexArray.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexArray.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexArray.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexArray.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/VertexArray.cpp",
   "output": "CMakeFiles/opengl.dir/include/VertexArray.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexBuffer.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexBuffer.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexBuffer.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexBuffer.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/VertexBuffer.cpp",
   "output": "CMakeFiles/opengl.dir/include/VertexBuffer.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/VertexBufferLayout.cpp",
   "output": "CMakeFiles/opengl.dir/include/VertexBufferLayout.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/camera.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/camera.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/camera.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/camera.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/camera.cpp",
   "output": "CMakeFiles/opengl.dir/include/camera.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/map.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/map.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/map.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/map.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/map.cpp",
   "output": "CMakeFiles/opengl.dir/include/map.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/material.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/material.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/material.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/material.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/material.cpp",
   "output": "CMakeFiles/opengl.dir/include/material.cpp.o"
 },
 {
   "directory": "/home/darius/Dev/cpp/test_opengl/src",
-  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/shader.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/shader.cpp",
+  "command": "/usr/bin/c++  -I/home/darius/Dev/cpp/test_opengl/src/include -I/home/darius/Dev/cpp/test_opengl/src/Assets -I/home/darius/Dev/cpp/test_opengl/src/vendor/glm/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/glad/include/glad -I/home/darius/Dev/cpp/test_opengl/src/vendor/stb_image/include -I/home/darius/Dev/cpp/test_opengl/src/vendor/imguiInclude/src -std=gnu++17 -flto=auto -fno-fat-lto-objects -o CMakeFiles/opengl.dir/include/shader.cpp.o -c /home/darius/Dev/cpp/test_opengl/src/include/shader.cpp",
   "file": "/home/darius/Dev/cpp/test_opengl/src/include/shader.cpp",
   "output": "CMakeFiles/opengl.dir/include/shader.cpp.o"
 },

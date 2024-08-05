@@ -236,10 +236,10 @@ opengl: CMakeFiles/opengl.dir/include/map.cpp.o
 opengl: CMakeFiles/opengl.dir/include/material.cpp.o
 opengl: CMakeFiles/opengl.dir/include/shader.cpp.o
 opengl: CMakeFiles/opengl.dir/build.make
-opengl: vendor/glad/libglad.a
-opengl: vendor/stb_image/libstb_image.a
-opengl: vendor/imguiInclude/libimgui.a
-opengl: vendor/glad/libglad.a
+opengl: lib/libglad.a
+opengl: lib/libstb_image.a
+opengl: lib/libimgui.a
+opengl: lib/libglad.a
 opengl: CMakeFiles/opengl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/darius/Dev/cpp/test_opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable opengl"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl.dir/link.txt --verbose=$(VERBOSE)

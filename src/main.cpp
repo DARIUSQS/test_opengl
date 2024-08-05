@@ -59,6 +59,14 @@ static void keyboardcallback(GLFWwindow *window, int key, int scancode, int acti
 static void checkForInput(GLFWwindow *window)
 {
     const float CameraSpeed = 2 * deltaTime;
+    if(glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+    {
+        CameraPos += CameraSpeed * (-CameraUp);
+    }
+    if(glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+    {
+        CameraPos += CameraSpeed * CameraUp;
+    }
     if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
     {
         CameraPos += CameraSpeed * CameraFront;
@@ -210,7 +218,6 @@ int main(void)
 
     Shader sh("resources/shaders/basic.shader");
     sh.Bind();
-
     Texture texture;
     texture.GenerateTexture("Textures/crate.jpg", GL_TEXTURE_2D);
     Texture specularTexture;

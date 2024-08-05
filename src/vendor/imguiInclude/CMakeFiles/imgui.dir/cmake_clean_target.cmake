@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libimgui.a"
+  "../../lib/libimgui.a"
 )

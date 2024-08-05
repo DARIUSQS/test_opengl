@@ -1,0 +1,2 @@
+"/usr/bin/gcc-ar" qc libglm.a CMakeFiles/glm.dir/src/glm.cpp.o
+"/usr/bin/gcc-ranlib" libglm.a
